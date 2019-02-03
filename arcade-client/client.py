@@ -35,8 +35,11 @@ with urllib.request.urlopen("https://storage.googleapis.com/arcademachine/title.
 
 # Repeatedly check status of current title
 while True:
-    with urllib.request.urlopen("https://storage.googleapis.com/arcademachine/title.html") as response:
-        title = response.read().decode('utf-8')
+    try:
+        with urllib.request.urlopen("https://storage.googleapis.com/arcademachine/title.html") as response:
+            title = response.read().decode('utf-8')
+    except:
+        print("Error, retrying")
 
     # If the latest title is different from the current title, launch the game
     if title in title_command:
