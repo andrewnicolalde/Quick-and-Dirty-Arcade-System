@@ -10,7 +10,7 @@ The application allows the user to launch retro arcade games inside the MAME arc
 
 ### Architecture
 
-![The Archicecture](./writeup_resources/architecture.png)
+![The Archicecture](https://i.imgur.com/hdqF3fZ.png)
 
 The applicaiton is divided into three primary components.
 
