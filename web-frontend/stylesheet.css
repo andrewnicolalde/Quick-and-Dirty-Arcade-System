@@ -1,5 +1,7 @@
 .overall{
   background-color:#999999;
+  min-width: 375px;
+  min-height: 667px;
 }
 
 .carousel-inner img {
@@ -33,4 +35,29 @@
 #middleContainer{
   padding-left: 0.75em;
   padding-right: 0.75em;
+}
+
+#gameCollections{
+  background-color: #bfbfbf;
+  height: 20em;
+}
+
+.gameDiv{
+  margin: 1em;
+  width: 25%;
+  /* height: 5em; */
+  float: left;
+  padding: 0.5em;
+  background-color: white;
+
+}
+
+
+.gameButton{
+  margin: auto;
+  overflow:hidden;
+  float = center;
+  height:100%;
+  width:80%;
+  background-color: blue;
 }
