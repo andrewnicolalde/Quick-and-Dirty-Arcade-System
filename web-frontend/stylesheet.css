@@ -22,7 +22,7 @@
 .carousel-item{
   /* overflow-y: hidden; */
   /* width:auto; */
-  height: 200px;
+  min-height: 200px;
 }
 #topContainer{
   box-shadow: 2px 2px 8px black;
@@ -39,24 +39,32 @@
 
 #gameCollections{
   background-color: #bfbfbf;
-  height: 20em;
+  height: 30em;
 }
 
 .gameDiv{
   margin: 1em;
-  width: 25%;
+  width: 50%;
   /* height: 5em; */
-  float: left;
+  /* float: left; */
+  display: flex;
   padding: 0.5em;
   background-color: white;
 
 }
 
+.btn{
+  width: 40%;
+  background: snow;
+  margin: 1em;
+  float: left;
+}
 
-.gameButton{
-  margin: auto;
+
+.gamePicSmall{
+  /* margin: auto; */
   overflow:hidden;
-  float = center;
+  /* flex:auto; */
   height:100%;
   width:80%;
   background-color: blue;
