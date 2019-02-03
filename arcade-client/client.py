@@ -9,7 +9,11 @@ import signal
 # Dict of acceptable titles to play.
 title_command = {
     "Robot Bowl": "robotbwl",
-    "Car Polo": "carpolo"
+    "Car Polo": "carpolo",
+    "Top Gunner": "topgunnr",
+    "Alien Arena": "alienar",
+    "Star Fire": "starfire",
+    "Crash": "crash"
 }
 
 print(title_command)
