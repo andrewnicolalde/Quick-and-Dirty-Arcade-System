@@ -71,4 +71,6 @@ blob.make_public() # Set metadata by calling function on blob
 
 ## Acknowledgements
 
-Frontend menu carousel referenced from W3School, https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp
+* Frontend menu carousel referenced from W3School, https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp
+
+* Thanks to Sam Machin for his help in debugging our GCP Serverless function.
