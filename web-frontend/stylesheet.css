@@ -1,0 +1,70 @@
+.overall{
+  background-color:#999999;
+  min-width: 375px;
+  min-height: 667px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.containers{
+  margin: auto;
+  width:100%;
+  height:15%;
+}
+
+.dividers{
+  padding: 0.5em;
+}
+
+.carousel-item{
+  /* overflow-y: hidden; */
+  /* width:auto; */
+  min-height: 200px;
+  max-height: 300px;
+  overflow-y: hidden;
+}
+#topContainer{
+  box-shadow: 2px 2px 8px black;
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+#middleContainer{
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+#gameCollections{
+  background-color: #bfbfbf;
+  height: 30em;
+}
+
+.gameDiv{
+  margin: 1em;
+  width: 50%;
+  /* height: 5em; */
+  /* float: left; */
+  display: flex;
+  padding: 0.5em;
+  background-color: white;
+}
+
+.btn{
+  width: 40%;
+  background: snow;
+  margin: 1em;
+  float: left;
+}
+
+.gamePicSmall{
+  /* margin: auto; */
+  overflow:hidden;
+  /* flex:auto; */
+  height:100%;
+  width:80%;
+  background-color: blue;
+}
