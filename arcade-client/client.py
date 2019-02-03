@@ -30,7 +30,7 @@ with urllib.request.urlopen("https://storage.googleapis.com/arcademachine/title.
     # No current title checks for first run
     print(title in title_command)
     if title in title_command:
-        game_proc = subprocess.Popen(["mame", title_command[title]], shell=False)
+        game_proc = subprocess.Popen(["mame", "-skip_gameinfo" , title_command[title]], shell=False)
         print(game_proc.pid)
     else:
         print("Invalid title")
@@ -49,7 +49,7 @@ while True:
     if title in title_command:
         if current_title != title:
             subprocess.Popen(["kill", "-9", str(game_proc.pid)], shell=False) # Murder MAME because it doesn't seem to accept regular kills
-            game_proc = subprocess.Popen(["mame", title_command[title]], shell=False)
+            game_proc = subprocess.Popen(["mame", "-skip_gameinfo", title_command[title]], shell=False)
             current_title = title
         else:
             print("The current game is already", title)
