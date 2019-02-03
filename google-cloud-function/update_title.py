@@ -5,7 +5,6 @@ def update_title(request):
     """
     Updates title.html to reflect the title desired
     """
-    request_json = request.get_json()
     if request.args and 'title' in request.args:
         with open("/tmp/tempfile", "w") as f:
             f.write(request.args.get('title'))
