@@ -9,7 +9,7 @@ def update_title(request):
     if request.args and 'title' in request.args:
         with tempfile.TemporaryFile() as f:
             f.write(request.args.get('title'))
-            resp = upload_blob("arcademachine", "/tmp/tempfile", "title.html")
+            resp = upload_blob("arcademachine", f.name, "title.html")
             return resp
     else:
         return "Error"
