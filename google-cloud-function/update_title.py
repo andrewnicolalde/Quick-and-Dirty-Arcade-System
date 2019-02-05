@@ -1,4 +1,5 @@
 from google.cloud import storage
+import tempfile
 
 def update_title(request):
     
@@ -6,10 +7,10 @@ def update_title(request):
     Updates title.html to reflect the title desired
     """
     if request.args and 'title' in request.args:
-        with open("/tmp/tempfile", "w") as f:
+        with tempfile.TemporaryFile() as f:
             f.write(request.args.get('title'))
-        resp = upload_blob("arcademachine", "/tmp/tempfile", "title.html")
-        return resp
+            resp = upload_blob("arcademachine", f.name, "title.html")
+            return resp
     else:
         return "Error"
 
